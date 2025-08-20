@@ -16,8 +16,6 @@ from .serializer import FilesSerializer, FilesListSerializer
 def home(request):
     return HttpResponse("<h1>This is Home</h1>")
 
-def index(request):
-    return HttpResponse("h")
 
 
 @api_view(['POST'])
