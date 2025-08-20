@@ -16,6 +16,10 @@ from .serializer import FilesSerializer, FilesListSerializer
 def home(request):
     return HttpResponse("<h1>This is Home</h1>")
 
+def index(request):
+    return HttpResponse("h")
+
+
 @api_view(['POST'])
 def files_progress(request , file_id):
     file_object = get_object_or_404(Files , id = file_id)
