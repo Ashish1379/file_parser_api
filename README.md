@@ -23,12 +23,13 @@ pandas, openpyxl for parsing
 
 Setup Instructions
 1) Clone & install
-git clone <link>
-cd <repo-folder>
-
-
-
+git clone https://github.com/Ashish1379/file_parser_api/tree/master
+cd file
 pip install django djangorestframework pandas openpyxl
+
+
+
+
 
 2) Configure media & DRF (already in code, but check)
 In settings.py:
