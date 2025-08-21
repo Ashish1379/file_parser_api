@@ -4,13 +4,13 @@ File Parser CRUD API (Django + DRF)
 A simple API to upload large files (CSV/XLSX), track upload/processing progress, parse with pandas, and fetch parsed content. Includes polling-based progress and an optional path for Server-Sent Events (SSE).
 
 Features
-Upload a file (multipart/form-data)
+Upload a file (form-data)
 Store file metadata + binary (Django FileField)
 Background processing (thread) with fake/streamed progress
-Parse using pandas (CSV/XLSX/JSON) → store as JSON
+Parse using pandas (CSV/XLSX) → store as JSON
 CRUD: list files, get parsed content, delete file
 Progress polling endpoint (returns 102 Processing until ready)
-Optional SSE endpoint (if you enable it) for real-time parsing progress
+Optional SSE endpoint for real-time parsing progress
 
 
 Tech Used
